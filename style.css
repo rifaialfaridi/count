@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 60px;
+  margin: -150px 0 40px;
+}
+
+.countdown {
+  display: flex;
+  transform: scale(2);
+  width: 60px;
+  justify-content: center;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+time h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+@media (max-width: 500px) {
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #bac2ce;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.background {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  mask-image: radial-gradient(white 0%, white 30%, transparent 80%, transparent);
+}
+
+@media screen and (max-width: 768px) {
+  .countdown {
+    width: 40px;
+  }
+}
